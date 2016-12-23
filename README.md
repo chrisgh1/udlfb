@@ -42,10 +42,6 @@ Section "Device"
   driver "fbdev" 
   Option "fbdev" "/dev/fb2" 
   Option "ShadowFB" "off"
-# This option rotates the screen but need to figure out how to rotate touch
-#  Option "rotate" "CW"
 EndSection 
 
 shutdown -r now
-
-add autologin-user=odroid to /usr/share/lightdm/lightdm.conf.d/60-lightdm-gtk-greeter.conf
